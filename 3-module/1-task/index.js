@@ -26,3 +26,4 @@ function showSalary(data, age) {
 }
 
 showSalary(data, 21);
+
