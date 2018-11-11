@@ -11,7 +11,12 @@ function print (text) {
  * Эту функцию нужно поменять так,
  * чтобы функция sayHello работала корректно
  */
-function isValid (name) {
+function isValid(name) {
+    if(typeof name !== undefined && name != null) {
+        if(/\s/g.test(name) === false && name.length > 3) {
+            return true;
+        } else return false;
+    }
 }
 
 function sayHello () {
